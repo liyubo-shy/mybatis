@@ -16,6 +16,6 @@
     </environments>
     <mappers>
         <!--加载sql的映射文件-->
-        <mapper resource="SysuserMapper.xml"/>
+        <mapper resource="com/bobo/mapper/UserMapper.xml"/>
     </mappers>
 </configuration>

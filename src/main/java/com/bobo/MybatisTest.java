@@ -25,7 +25,7 @@ public class MybatisTest {
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         //执行Sql
-        List<Sys_user> sysUser = sqlSession.selectList("sys_user_test.selectAll");
+        List<Sys_user> sysUser = sqlSession.selectList("com.bobo.mapper.UserMapper.selectAll");
         System.out.println(sysUser);
 
         //释放资源
