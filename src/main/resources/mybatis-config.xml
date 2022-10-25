@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
+    <!--配置数据库连接信息-->
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -16,6 +17,9 @@
     </environments>
     <mappers>
         <!--加载sql的映射文件-->
-        <mapper resource="com/bobo/mapper/UserMapper.xml"/>
+        <!--<mapper resource="com/bobo/mapper/UserMapper.xml"/>-->
+
+        <!--Mapper包扫描方式-->
+        <package name="com.bobo.mapper"/>
     </mappers>
 </configuration>
